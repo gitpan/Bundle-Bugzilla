@@ -1,6 +1,6 @@
 package Bundle::Bugzilla;
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 1;
 
@@ -54,6 +54,15 @@ Used for CGI error reporting.
 
 =item Date::Parse
 Enables SQL-style search query statements for Bugzilla.
+
+=item AppConfig
+Used as part of the Template system
+
+=item Template
+For templates in the bugzilla code
+
+=item Text::Wrap
+Used to wrap text in comment fields
 
 =head1 AUTHOR
 
