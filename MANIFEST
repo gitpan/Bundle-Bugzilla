@@ -1,4 +1,3 @@
 MANIFEST
 Makefile.PL
 Bugzilla.pm
-t/00base.t

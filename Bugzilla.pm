@@ -1,6 +1,6 @@
 package Bundle::Bugzilla;
 
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 1;
 
@@ -24,7 +24,7 @@ Date::Parse
 
 AppConfig 1.52
 
-Template 2.06
+Template 2.07
 
 Text::Wrap
 
@@ -57,7 +57,7 @@ Enables SQL-style search query statements for Bugzilla.
 Used as part of the Template system
 
 =item Template
-For templates in the bugzilla code
+For templates in the bugzilla code. 2.07 is now required by Bugzilla.
 
 =item Text::Wrap
 Used to wrap text in comment fields
