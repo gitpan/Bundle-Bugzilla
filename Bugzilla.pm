@@ -1,6 +1,6 @@
 package Bundle::Bugzilla;
 
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 1;
 
@@ -16,13 +16,17 @@ C<perl -MCPAN -e 'install Bundle::Bugzilla'>
 
 =head1 CONTENTS
 
-Bundle::Mysql
-
-Data::Dumper
+Bundle::DBD::mysql
 
 CGI::Carp
 
 Date::Parse
+
+AppConfig 1.52
+
+Template 2.06
+
+Text::Wrap
 
 =head1 DESCRIPTION
 
@@ -42,12 +46,6 @@ information.
 =item Bundle::Mysql
 This module is used to connect to the database that Bugzilla uses 
 to store its information.
-
-=item Data::Dumper
-The Data::Dumper module provides data structure persistence for Perl
-(similar to Java's serialization).  It comes with later sub-releases of
-Perl 5.004, but a re-installation just to be sure it's available won't
-hurt anything. Data::Dumper is used by the MySQL related Perl modules.
 
 =item CGI::Carp
 Used for CGI error reporting.
