@@ -1,6 +1,6 @@
 package Bundle::Bugzilla;
 
-$VERSION = '0.09';
+$VERSION = '0.10';
 
 1;
 
@@ -24,6 +24,8 @@ CGI::Carp
 
 Data::Dumper
 
+Date::Format 2.21
+
 Bundle::DBD::mysql
 
 File::Spec 0.82
@@ -34,7 +36,7 @@ File::Spec 0.82
 
 File::Temp
 
-Template 2.07
+Template 2.08
 
 Text::Wrap
 
@@ -63,11 +65,14 @@ Used for CGI error reporting.
 =item Date::Parse
 Enables SQL-style search query statements for Bugzilla.
 
+=item Date::Format
+More date processing
+
 =item AppConfig
 Used as part of the Template system
 
 =item Template
-For templates in the bugzilla code. 2.07 is now required by Bugzilla.
+For templates in the bugzilla code. 2.08 is now required by Bugzilla.
 
 =item Text::Wrap
 Used to wrap text in comment fields
