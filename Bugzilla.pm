@@ -1,6 +1,6 @@
 package Bundle::Bugzilla;
 
-$VERSION = '0.10';
+$VERSION = '0.11';
 
 1;
 
@@ -18,7 +18,7 @@ C<perl -MCPAN -e 'install Bundle::Bugzilla'>
 
 AppConfig 1.52
 
-CGI 2.88
+CGI 2.98
 
 CGI::Carp
 
@@ -27,10 +27,6 @@ Data::Dumper
 Date::Format 2.21
 
 Bundle::DBD::mysql
-
-File::Spec 0.82
-
-Date::Parse
 
 File::Spec 0.82
 
@@ -52,45 +48,6 @@ your installation and make yourself an account. Run checksetup.pl again
 and you will become the superuser for your bugzilla installation. Still 
 confused? Read the information in the docs/ directory for more
 information.
-
-=over 4
-
-=item Bundle::DBD::Mysql
-This module is used to connect to the database that Bugzilla uses 
-to store its information.
-
-=item CGI::Carp
-Used for CGI error reporting.
-
-=item Date::Parse
-Enables SQL-style search query statements for Bugzilla.
-
-=item Date::Format
-More date processing
-
-=item AppConfig
-Used as part of the Template system
-
-=item Template
-For templates in the bugzilla code. 2.08 is now required by Bugzilla.
-
-=item Text::Wrap
-Used to wrap text in comment fields
-
-=item CGI
-Used to parse CGI params and display HTML
-
-=item Data::Dumped
-Used to store data so that other code can use it again later
-
-=item File::Spec
-Used to store data about files
-
-=item File::Temp
-Used to create and manage temp files
-
-=item Text::Wrap
-Used to wrap text in Bugzilla pages
 
 =head1 AUTHOR
 
