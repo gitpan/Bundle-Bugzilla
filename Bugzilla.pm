@@ -1,6 +1,6 @@
 package Bundle::Bugzilla;
 
-$VERSION = '0.08';
+$VERSION = '0.09';
 
 1;
 
@@ -16,19 +16,27 @@ C<perl -MCPAN -e 'install Bundle::Bugzilla'>
 
 =head1 CONTENTS
 
-Bundle::DBD::mysql
+AppConfig 1.52
+
+CGI 2.88
 
 CGI::Carp
 
+Data::Dumper
+
+Bundle::DBD::mysql
+
+File::Spec 0.82
+
 Date::Parse
 
-AppConfig 1.52
+File::Spec 0.82
+
+File::Temp
 
 Template 2.07
 
 Text::Wrap
-
-File::Spec 0.82
 
 =head1 DESCRIPTION
 
@@ -45,7 +53,7 @@ information.
 
 =over 4
 
-=item Bundle::Mysql
+=item Bundle::DBD::Mysql
 This module is used to connect to the database that Bugzilla uses 
 to store its information.
 
@@ -64,10 +72,22 @@ For templates in the bugzilla code. 2.07 is now required by Bugzilla.
 =item Text::Wrap
 Used to wrap text in comment fields
 
+=item CGI
+Used to parse CGI params and display HTML
+
+=item Data::Dumped
+Used to store data so that other code can use it again later
+
 =item File::Spec
-Used to get details on files
+Used to store data about files
+
+=item File::Temp
+Used to create and manage temp files
+
+=item Text::Wrap
+Used to wrap text in Bugzilla pages
 
 =head1 AUTHOR
 
-Zach Lipton, <zach@zachlipton.com>
+Zach Lipton, <zlipton@cpan.org>
 
