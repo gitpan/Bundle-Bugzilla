@@ -1,6 +1,6 @@
 package Bundle::Bugzilla;
 
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 1;
 
@@ -27,6 +27,8 @@ AppConfig 1.52
 Template 2.07
 
 Text::Wrap
+
+File::Spec 0.82
 
 =head1 DESCRIPTION
 
@@ -61,6 +63,9 @@ For templates in the bugzilla code. 2.07 is now required by Bugzilla.
 
 =item Text::Wrap
 Used to wrap text in comment fields
+
+=item File::Spec
+Used to get details on files
 
 =head1 AUTHOR
 
